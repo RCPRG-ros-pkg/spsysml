@@ -7,13 +7,17 @@
  This kind of system consists of at least one embodiment physical/simulated and a shared controller. If it has both embodiments, a simulated part can be a Digital Twin (DT) of a physical part. If it has only the physical embodiment, it is a Cyber-Physical System (CPS), and if it has only the simulated embodiment, it is a simulator.
  
 ## SPSys Concept
+<p align="center">
 <img src="https://user-images.githubusercontent.com/7499883/223860003-b54a8238-6fe2-45c9-9df6-2c7b507df481.png"  width="400">
+</p>
 
 ## SPSys Modeling Language (SPSysML)
 SPSysML defines the taxonomy of a Simulation-Physical System (SPSys) and relationships between its parts. SPSysML models constraints in this kind of systems and enables structure optimisation using proposed design evaluation factors. 
 
 ## SPSys Development Procedure (SPSysDP)
+<p align="center">
 <img src="https://github.com/RCPRG-ros-pkg/spsysml/raw/main/spsysdp-radmap.png"  width="600">
+</p>
 
 # Novelty
 The key novel features delivered by SPSysML and SPSysDP are:
