@@ -14,6 +14,8 @@
 ## SPSys Modeling Language (SPSysML)
 SPSysML defines the taxonomy of a Simulation-Physical System (SPSys) and relationships between its parts. SPSysML models constraints in this kind of systems and enables structure optimisation using proposed design evaluation factors. 
 
+### SPSysML usage
+
 ## SPSys Development Procedure (SPSysDP)
 <p align="center">
 <img src="https://github.com/RCPRG-ros-pkg/spsysml/raw/main/spsysdp-radmap.png"  width="600">
