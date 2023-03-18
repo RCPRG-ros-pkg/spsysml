@@ -20,7 +20,7 @@ Aa SPSysML bases on SysML, to start working with SPSysML it is convenient to:
 * Friedenthal, Sanford, Alan Moore, and Rick Steiner. A practical guide to SysML: the systems modeling language. Morgan Kaufmann, 2014.
 * Delligatti, Lenny. SysML distilled: A brief guide to the systems modeling language. Addison-Wesley, 2013.
 2.	Choose the development software that supports SysML projects (e.g. Enterprise Architect, Visual Paradigm),
-3.	The [SPSysML](spsys-profile.xml) profile, that defines SPsysML stereotypes, and [SPsysML documentation](spsys-doc.pdf) can be helpful.
+3.	The [SPSysML](spsys-profile.xml) profile, that defines SPsysML stereotypes, and [SPsysML project documentation](spsys-doc.pdf) can be helpful.
 
 
 
