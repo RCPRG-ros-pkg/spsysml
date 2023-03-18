@@ -15,6 +15,14 @@
 SPSysML defines the taxonomy of a Simulation-Physical System (SPSys) and relationships between its parts. SPSysML models constraints in this kind of systems and enables structure optimisation using proposed design evaluation factors. 
 
 ### SPSysML usage
+Aa SPSysML bases on SysML, to start working with SPSysML it is convenient to:
+1.	Learn basics of SysML as a MBSE tool, e.g.:
+* Friedenthal, Sanford, Alan Moore, and Rick Steiner. A practical guide to SysML: the systems modeling language. Morgan Kaufmann, 2014.
+* Delligatti, Lenny. SysML distilled: A brief guide to the systems modeling language. Addison-Wesley, 2013.
+2.	Choose the development software that supports SysML projects (e.g. Enterprise Architect, Visual Paradigm),
+3.	The SPSysML profile, that defines SPsysML stereotypes and SPsysML documentation can be helpful.
+
+
 
 ## SPSys Development Procedure (SPSysDP)
 <p align="center">
