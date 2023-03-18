@@ -1,5 +1,5 @@
 # Repository content
-* Simulation-Physical System meta-model -- Simulation-Physical System MOdeling Language (SPSysML), 
+* Simulation-Physical System meta-model: Simulation-Physical System MOdeling Language (SPSysML), 
 * Simulation-Physical System Development Procedure (SPSysDP), 
 * Example robot system model developed with SPSysML and SPSysDP.
 
