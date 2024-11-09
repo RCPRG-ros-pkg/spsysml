@@ -23,11 +23,30 @@ Aa SPSysML bases on SysML, to start working with SPSysML it is convenient to:
 3.	The [SPSysML](spsys-profile.xml) profile, that defines SPsysML stereotypes, and [SPsysML project documentation](spsys-doc.pdf) can be helpful.
 
 
-
-## SPSys Development Procedure (SPSysDP)
+## SPSys Application Procedure (SPSysAP)
 <p align="center">
 <img src="https://github.com/RCPRG-ros-pkg/spsysml/raw/main/spsysdp-radmap.png"  width="600">
 </p>
+
+## The example procedure for the evaluation factors calculation
+Popular tools for SysML modelling implement the model as an SQL database and supply request interface to the database. The tool for automating the review process should utilise the interface to the SQL server. The following procedure is the minimum viable product easing evaluation factor calculation:
+1. In the Enterprise Architect modelling tool, execute the following SQL request to the database:\\
+```sql
+select o.ea_guid as CLASSGUID, o.Object_Type as CLASSTYPE, 
+       o.name as Name ,package.name as 'Package Name'
+from ((t_object o
+    left join t_xref stereo on stereo.Client = o.ea_guid)
+    inner join t_package package on o.package_id = package.package_id)
+where 
+    o.Stereotype like '#WC#<Search Term>#WC#' and
+    stereo.description like '@STEREO;Name=#WC#<Search Term>#WC#;#WC#' and
+    package.name = '<Evaluation scope>' and
+    o.Object_type = 'Class'
+```
+Use each parameter from the evaluation factor equations as the 'Search term', e.g. 'SimPhyContSubsys' and 'ContSubsys' for the Controller integrity factor. The search must be filtered for the framed-scope evaluation factor, such as the mirror integrity factor. The system model can be filtered by a package name. If the system model is decomposed to packages containing separate DT/PT pairs, the package name can be set as the 'Evaluation scope' in line 9 of the above listing.  
+
+2. Count rows for each parameter from the evaluation factor equations or use the SQL 'COUNT' function.
+3. Put the count result to the equations defining the evaluation factors.
 
 # Novelty
 The key novel features delivered by SPSysML and SPSysDP are:
